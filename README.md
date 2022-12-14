@@ -37,4 +37,5 @@
 ## ✅ Landing Page: 
 [Посмотреть](https://kamneva.github.io/StankinFood/)
 
-
+## ✅ Открытый исходный код: 
+[Перейти к коду](https://github.com/kamneva/StankinFood/tree/code)
