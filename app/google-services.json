@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "310284880548",
+    "project_id": "hackinhome2021-stankin-food",
+    "storage_bucket": "hackinhome2021-stankin-food.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:310284880548:android:fa51763bc929fbc55bf431",
+        "android_client_info": {
+          "package_name": "com.example.hackinhome2021_stankinfood"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "310284880548-p1sbnk1mvnbig5ma277hjcup3rlu26uj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBaSw-HNyM0cdvLOAYhzFGjohIAx8iKuPY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "310284880548-p1sbnk1mvnbig5ma277hjcup3rlu26uj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

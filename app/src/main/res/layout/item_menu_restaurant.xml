@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:backgroundTint="?attr/cardBackgroundColor"
+    app:cardCornerRadius="8dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/textViewName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:gravity="center"
+            android:text="Name"
+            android:textSize="?attr/textSizeHeader"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewAddress"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="4dp"
+            android:text="@string/address"
+            android:textSize="?attr/textSizeMedium"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@id/textViewRealAddress"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textViewName" />
+
+        <TextView
+            android:id="@+id/textViewRealAddress"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|end"
+            android:text="Address"
+            android:textSize="?attr/textSizeMedium"
+            app:layout_constraintBottom_toBottomOf="@id/textViewAddress"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/textViewAddress"
+            app:layout_constraintTop_toTopOf="@id/textViewAddress" />
+
+        <TextView
+            android:id="@+id/textViewOpeningHours"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="4dp"
+            android:text="@string/opening_hours"
+            android:textSize="?attr/textSizeMedium"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@id/textViewRealOpeningHours"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textViewAddress" />
+
+        <TextView
+            android:id="@+id/textViewRealOpeningHours"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|end"
+            android:text="Opening Hours"
+            android:textSize="?attr/textSizeMedium"
+            app:layout_constraintBottom_toBottomOf="@id/textViewOpeningHours"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/textViewOpeningHours"
+            app:layout_constraintTop_toTopOf="@id/textViewOpeningHours" />
+
+        <TextView
+            android:id="@+id/textViewClosingHours"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="4dp"
+            android:text="@string/closing_hours"
+            android:textSize="?attr/textSizeMedium"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@id/textViewRealClosingHours"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textViewOpeningHours" />
+
+        <TextView
+            android:id="@+id/textViewRealClosingHours"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|end"
+            android:text="Closing Hours"
+            android:textSize="?attr/textSizeMedium"
+            app:layout_constraintBottom_toBottomOf="@id/textViewClosingHours"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/textViewClosingHours"
+            app:layout_constraintTop_toTopOf="@id/textViewClosingHours" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

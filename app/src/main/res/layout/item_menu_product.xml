@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    android:backgroundTint="?attr/cardBackgroundColor"
+    app:cardCornerRadius="8dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textViewName"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:gravity="start|center_vertical"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:text="ProductName"
+            android:textSize="?attr/textSizeMedium"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/imageButtonLiked"
+            app:layout_constraintEnd_toStartOf="@id/imageButtonLiked"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/imageButtonLiked" />
+
+        <ImageButton
+            android:id="@+id/imageButtonLiked"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/image_button_liked"
+            android:contentDescription="@null"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageViewPicture"
+            android:layout_width="match_parent"
+            android:layout_height="96dp"
+            android:layout_margin="8dp"
+            android:contentDescription="@null"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_no_image_64dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textViewName" />
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            style="@style/MyRatingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:numStars="5"
+            android:rating="0"
+            android:scaleX=".75"
+            android:scaleY=".75"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imageViewPicture" />
+
+        <TextView
+            android:id="@+id/textViewDescription"
+            android:layout_width="match_parent"
+            android:layout_height="112dp"
+            android:layout_margin="8dp"
+            android:ellipsize="end"
+            android:maxLines="6"
+            android:text="ProductDescription"
+            android:textSize="?attr/textSizeNormal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ratingBar" />
+
+        <Button
+            android:id="@+id/buttonPrice"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_margin="8dp"
+            android:text="100 RUB"
+            android:textSize="?attr/textSizeNormal"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textViewDescription" />
+
+        <ImageButton
+            android:id="@+id/imageButtonMinus"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/item_menu_product_round_corner"
+            android:backgroundTint="?attr/colorPrimary"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_remove_24dp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textViewDescription" />
+
+        <TextView
+            android:id="@+id/textViewCount"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:text="6"
+            android:textSize="?attr/textSizeNormal"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@id/imageButtonMinus"
+            app:layout_constraintEnd_toStartOf="@id/imageButtonPlus"
+            app:layout_constraintStart_toEndOf="@id/imageButtonMinus"
+            app:layout_constraintTop_toTopOf="@id/imageButtonMinus" />
+
+        <ImageButton
+            android:id="@+id/imageButtonPlus"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/item_menu_product_round_corner"
+            android:backgroundTint="?attr/colorPrimary"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_add_24dp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@id/imageButtonMinus"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/imageButtonMinus" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".fragments.OrderFragment">
+
+    <TextView
+        android:id="@+id/textViewOrderId"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Order id: #ORDER_ID#"
+        android:textSize="?attr/textSizeHeader"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageViewQR"
+        android:layout_width="256dp"
+        android:layout_height="256dp"
+        android:layout_margin="8dp"
+        android:contentDescription="@null"
+        app:layout_constraintBottom_toTopOf="@id/textViewPickupTime"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewOrderId" />
+
+    <TextView
+        android:id="@+id/textViewPickupTime"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="start|center_vertical"
+        android:text="@string/pick_up_time"
+        android:textSize="?attr/textSizeMedium"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/textViewRealPickupTime"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewQR" />
+
+    <TextView
+        android:id="@+id/textViewRealPickupTime"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="end|center_vertical"
+        android:text="16:00"
+        android:textSize="?attr/textSizeNormal"
+        app:layout_constraintBottom_toBottomOf="@id/textViewPickupTime"
+        app:layout_constraintEnd_toEndOf="@id/recyclerViewProducts"
+        app:layout_constraintStart_toEndOf="@+id/textViewPickupTime"
+        app:layout_constraintTop_toTopOf="@+id/textViewPickupTime" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewProducts"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toTopOf="@+id/textViewTotalPrice"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPickupTime" />
+
+    <TextView
+        android:id="@+id/textViewTotalPrice"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="start|center_vertical"
+        android:text="@string/total_price"
+        android:textSize="?attr/textSizeMedium"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/buttonCloseOrder"
+        app:layout_constraintEnd_toStartOf="@+id/textViewRealTotalPrice"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewRealTotalPrice"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="end|center_vertical"
+        android:text="300 RUB"
+        android:textSize="?attr/textSizeNormal"
+        app:layout_constraintBottom_toBottomOf="@id/textViewTotalPrice"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewTotalPrice"
+        app:layout_constraintTop_toTopOf="@id/textViewTotalPrice" />
+
+    <Button
+        android:id="@+id/buttonCloseOrder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/close_order"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

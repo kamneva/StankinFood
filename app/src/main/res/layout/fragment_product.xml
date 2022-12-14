@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".fragments.ProductFragment">
+
+    <TextView
+        android:id="@+id/textViewName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="ViewName"
+        android:textSize="?attr/textSizeHeader"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageViewPicture"
+        android:layout_width="match_parent"
+        android:layout_height="256dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@null"
+        android:src="@drawable/ic_no_image_64dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewName" />
+
+    <ImageButton
+        android:id="@+id/imageButtonLiked"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:background="@drawable/image_button_liked"
+        android:contentDescription="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        style="?android:ratingBarStyleIndicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageViewPicture" />
+
+    <TextView
+        android:id="@+id/textViewDescription"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:ellipsize="end"
+        android:maxLines="7"
+        android:text="Description"
+        android:textSize="?attr/textSizeNormal"
+        app:layout_constraintBottom_toTopOf="@id/bottomControllers"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ratingBar" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/bottomControllers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/textViewSinglePrice"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/single_price"
+            android:textSize="?attr/textSizeMedium"
+            android:textStyle="bold"
+            android:visibility="gone"
+            app:layout_constraintEnd_toStartOf="@id/textViewRealSinglePrice"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewRealSinglePrice"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:gravity="end|center_vertical"
+            android:text="Real single price"
+            android:textSize="?attr/textSizeNormal"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@id/textViewSinglePrice"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/textViewSinglePrice"
+            app:layout_constraintTop_toTopOf="@id/textViewSinglePrice" />
+
+        <TextView
+            android:id="@+id/textViewTotalPrice"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="@string/total_price"
+            android:textSize="?attr/textSizeMedium"
+            android:textStyle="bold"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@+id/textViewProductsLeft"
+            app:layout_constraintEnd_toStartOf="@id/textViewRealTotalPrice"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewSinglePrice" />
+
+        <TextView
+            android:id="@+id/textViewRealTotalPrice"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:gravity="end|center_vertical"
+            android:text="Real total price"
+            android:textSize="?attr/textSizeNormal"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@id/textViewTotalPrice"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/textViewTotalPrice"
+            app:layout_constraintTop_toTopOf="@id/textViewTotalPrice" />
+
+        <TextView
+            android:id="@+id/textViewProductsLeft"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="@string/products_left"
+            android:textSize="?attr/textSizeMedium"
+            android:textStyle="bold"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@+id/imageButtonMinus"
+            app:layout_constraintEnd_toStartOf="@id/textViewRealProductsLeft"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewTotalPrice" />
+
+        <TextView
+            android:id="@+id/textViewRealProductsLeft"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:gravity="end"
+            android:text="Real products left"
+            android:textSize="?attr/textSizeNormal"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@id/textViewProductsLeft"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/textViewProductsLeft"
+            app:layout_constraintTop_toTopOf="@id/textViewProductsLeft" />
+
+        <Button
+            android:id="@+id/buttonProductPrice"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:text="Coast"
+            android:textSize="?attr/textSizeNormal"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageButton
+            android:id="@+id/imageButtonMinus"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/fragment_product_round_corner"
+            android:backgroundTint="?attr/colorPrimary"
+            android:contentDescription="@null"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/textViewCount"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textViewProductsLeft"
+            app:srcCompat="@drawable/ic_remove_24dp" />
+
+        <TextView
+            android:id="@+id/textViewCount"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:text="Count"
+            android:textSize="?attr/textSizeNormal"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@id/imageButtonMinus"
+            app:layout_constraintEnd_toStartOf="@id/imageButtonPlus"
+            app:layout_constraintStart_toEndOf="@id/imageButtonMinus"
+            app:layout_constraintTop_toTopOf="@id/imageButtonMinus" />
+
+        <ImageButton
+            android:id="@+id/imageButtonPlus"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:background="@drawable/fragment_product_round_corner"
+            android:backgroundTint="?attr/colorPrimary"
+            android:contentDescription="@null"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/textViewCount"
+            app:layout_constraintTop_toTopOf="@id/imageButtonMinus"
+            app:srcCompat="@drawable/ic_add_24dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

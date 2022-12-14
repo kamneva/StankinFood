@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="textSizeHeader" format="dimension" />
+    <attr name="textSizeMedium" format="dimension" />
+    <attr name="textSizeNormal" format="dimension" />
+
+    <style name="MyRatingBar" parent="android:Widget.Material.RatingBar.Indicator">
+        <item name="android:progressBackgroundTint">?attr/colorSecondary</item>
+        <item name="colorControlNormal">?attr/colorSecondary</item>
+        <item name="colorControlActivated">?attr/colorSecondary</item>
+    </style>
+</resources>

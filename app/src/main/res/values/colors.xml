@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#FFA00F1E</color>
+    <color name="second">#FF002882</color>
+    <color name="onSecond">#FFFFEEDD</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="text_forgot_password">#FF1E90FF</color>
+
+    <attr name="cardViewBackground" format="color" />
+    <color name="card_view_background_light">#FFFAFAFA</color>
+    <color name="card_view_background_dark">#FF222222</color>
+</resources>

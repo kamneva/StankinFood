@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">HackInHome2021_Stankin.Food</string>
+
+    <string name="button_registration">Create an account</string>
+    <string name="button_authorization">I already have an account</string>
+    <string name="stankin_food">Stankin.Food</string>
+    <string name="email_hint">Email</string>
+    <string name="sign_in">Sign-in</string>
+    <string name="sign_up">Sign-up</string>
+    <string name="forgot_password">Forgot your password?</string>
+    <string name="authorization">Authorization</string>
+    <string name="registration">Registration</string>
+    <string name="password_auth_hint">Password</string>
+    <string name="password_reg_hint">Password (min. 8 characters)</string>
+    <string name="incorrect_password">Incorrect password!</string>
+    <string name="incorrect_email">Incorrect email!</string>
+    <string name="reset_password_title">Reset password</string>
+    <string name="reset_password_message">Are you sure you want to reset your email password:</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="retry">Retry</string>
+
+    <string name="total_price">Total price:</string>
+    <string name="single_price">Single price:</string>
+    <string name="products_left">Products left:</string>
+    <string name="currency">RUB</string>
+
+    <string name="restaurants">Restaurants</string>
+    <string name="cafe">Cafe</string>
+    <string name="favorite_orders">Orders</string>
+    <string name="favorite_products">Products</string>
+    <string name="cart">Cart</string>
+
+    <string name="order_id">Order id:</string>
+    <string name="pick_up_time">Pick-up time:</string>
+    <string name="close_order">Close order</string>
+
+    <string name="address">Pick up from</string>
+    <string name="real_address_cafe">Burger cafe (3 floor)</string>
+    <string name="real_address_eatery">Eatery (2 floor)</string>
+    <string name="pick_up_soon">I will pick it up soon</string>
+    <string name="pick_up_at">I will pick it up at:</string>
+    <string name="change_time">Change time</string>
+    <string name="clear_cart">Clear cart</string>
+    <string name="pay_rest">Pay at the restaurant</string>
+
+    <string name="no_product_left">Amount used up!</string>
+
+    <string name="cart_clear_message">Are you sure you want to empty your shopping cart?</string>
+    <string name="cart_item_remove_title">Item removing</string>
+    <string name="cart_item_remove_message">The item will be removed from the cart</string>
+
+    <string name="verification_email_title">Verification email</string>
+    <string name="verification_email_message">A verification message was sent to your email address:</string>
+
+    <string name="error_verify_email">Error: Please verify your email address!</string>
+    <string name="reset_password">A password reset email was sent to:</string>
+    
+    <string name="like_add">The like was added!</string>
+    <string name="like_remove">The like was removed!</string>
+
+    <string name="opening_hours">Opening hours</string>
+    <string name="closing_hours">Closing hours</string>
+
+    <string name="order_created_title">Order created</string>
+    <string name="order_created_message">Your order has been added to processing</string>
+
+    <string name="scan_qr">Scan QR</string>
+    <string name="scan_error">Failed to scan QR code!</string>
+
+    <string name="error_empty_cart">Error: cart is empty!</string>
+</resources>
