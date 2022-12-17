@@ -29,10 +29,10 @@
 + ИДМ-22-07:
    * Свицов Ростислав - СП, ПП.
 
-
-
 Распределение ролей также показано в Google-таблице:
 [Кондуит ИДМ-22](https://docs.google.com/spreadsheets/d/1ypxgDUpNsaAK5PH90dTfGKdtDnWaeEDWfupEbDokN6A/edit?usp=sharing)
+
+Команда представляет проект "Stankin.Food" на конкурсе в номинации "Учеба"
 
 ## ✅ Landing Page: 
 [Посмотреть](https://kamneva.github.io/StankinFood/)
